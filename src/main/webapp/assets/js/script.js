@@ -12,10 +12,19 @@ function clickToSave() {
     if ( result ) {
         // the user clicked ok
         writeUserData(name, company, email, phone, address, group);
-        location = location;
+        clearForm ()
     } else {
         // the user clicked cancel or closed the confirm dialog.
     }
+}
+
+function clearForm () {
+    document.getElementById('name').value = "";
+    document.getElementById('company').value = "";
+    document.getElementById('email').value = "";
+    document.getElementById('phone').value = "";
+    document.getElementById('address').value = "";
+    document.getElementById('group').value = "";
 }
 
 function loadContact(){
