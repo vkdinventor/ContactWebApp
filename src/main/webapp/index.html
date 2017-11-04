@@ -45,11 +45,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <div class="list-group">
-            <a href="#" class="list-group-item active">All Contact <span id = 'allContacatBadge' class="badge">0</span></a>
-            <a href="" class="list-group-item">Family <span id = 'familyContacatBadge' class="badge">0</span></a>
-            <a href="" class="list-group-item">Friends <span id = 'friendContacatBadge'class="badge">0</span></a>
-            <a href="" class="list-group-item">Other <span id = 'otherContacatBadge'class="badge">0</span></a>
+          <div id = 'listGrup' class="list-group">
+            <a href="#" onclick="activeSelecedItem(this); loadContact(0);" class="list-group-item active">All Contact <span id = 'allContacatBadge' class="badge">0</span></a>
+            <a  onclick="activeSelecedItem(this); loadContact(1);" class="list-group-item">Family <span id = 'familyContacatBadge' class="badge">0</span></a>
+            <a  onclick="activeSelecedItem(this); loadContact(2);" class="list-group-item">Friends <span id = 'friendContacatBadge'class="badge">0</span></a>
+            <a  onclick="activeSelecedItem(this); loadContact(3);"class="list-group-item">Other <span id = 'otherContacatBadge'class="badge">0</span></a>
           </div>
         </div><!-- /.col-md-3 -->
 
