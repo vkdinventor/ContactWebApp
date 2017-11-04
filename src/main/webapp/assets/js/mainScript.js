@@ -16,7 +16,7 @@ function loadContact(group){
 '                  <div class="media">'+
 '                    <div class="media-left">'+
 '                      <a href="#">'+
-'                        <img class="media-object" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhqeVOZbJuUSqe7WlfgL7v6miEZfRuWh5ZwsFKEdeim4w3VSLJ" alt="...">'+
+'                        <img id = "profilePhoto" class="media-object" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhqeVOZbJuUSqe7WlfgL7v6miEZfRuWh5ZwsFKEdeim4w3VSLJ" alt="...">'+
 '                      </a>'+
 '                    </div>'+
 '                    <div class="media-body">'+

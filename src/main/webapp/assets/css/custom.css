@@ -59,3 +59,15 @@ body {
 	margin-bottom: 40px;
 	margin-top: 40px;
 }
+
+@media (max-width: 450px) {
+	/* CSS that should be displayed if width is equal to or less than 450px goes here */
+	#profilePhoto {
+		width: 60px;
+		height: 60px;
+	}
+
+	.media-left {
+		padding: 0 5px;
+	}
+  }
