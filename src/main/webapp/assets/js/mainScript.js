@@ -6,7 +6,7 @@ function loadContact(){
         snapshot.forEach(function(childSnapshot) {
           var childData = childSnapshot.val();
           dataSet.push(childData);
-          console.log('contact details : '+childData.name+' '+childData.phone+' '+childData.email);
+          console.log('contact details : '+childData.name+' '+childData.phone+' '+childData.email+' '+childData.group);
           
  myvar = myvar+ '<tr>'+
 '                <td class="middle">'+
@@ -38,9 +38,25 @@ function loadContact(){
 '              </tr>';
         });
         document.getElementById('progressImage').style.display = 'none';
-        document.getElementById('contactTable').innerHTML = myvar;        
+        document.getElementById('contactTable').innerHTML = myvar;
+        var family = 0;
+        var friend = 0;
+        var other = 0;
+        dataSet.forEach(function(item){
+            if(item.group == 1){
+                family++;
+            }else if(item.group == 2){
+                friend++;
+            }else {
+                other++;
+            }
+        });
+        console.log('All contact details : '+dataSet.length+' family '+family+' friend '+friend+' other: '+other);
+        document.getElementById('allContacatBadge').innerHTML = dataSet.length;
+        document.getElementById('familyContacatBadge').innerHTML = family;
+        document.getElementById('friendContacatBadge').innerHTML = friend;
+        document.getElementById('otherContacatBadge').innerHTML = other;
     });
-    console.log('All contact details : '+dataSet);
 }
 
 loadContact();
