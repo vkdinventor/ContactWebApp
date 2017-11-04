@@ -1,0 +1,9 @@
+.classpath
+.project
+.settings/
+src/main/webapp/.firebaserc
+src/main/webapp/database.rules.json
+src/main/webapp/firebase.json
+src/main/webapp/public/
+target/
+
